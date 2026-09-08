@@ -1,0 +1,124 @@
+/* Core Page Layout */
+body {
+    background-color: #f4f5f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Action Header Styling */
+.action-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.action-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.download-btn {
+    background-color: #0076f6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Document Preview Frame */
+.resume-preview-window {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Handles smaller mobile screens gracefully */
+}
+
+/* Mimicking a Real Page Layout */
+.resume-paper {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 612px; /* standard 8.5" proportion logic scale */
+    min-height: 792px; /* standard 11" proportion logic scale */
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    color: #222222;
+    line-height: 1.5;
+}
+
+/* Internal Resume Elements */
+.resume-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+}
+
+.resume-header .subtitle {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.resume-header .contact {
+    margin: 10px 0 0 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.resume-section h3 {
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: #0076f6;
+}
+
+.job-title-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.company {
+    margin: 2px 0 8px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.resume-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.resume-section li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
