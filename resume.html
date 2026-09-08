@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview & Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="resume-container">
+        <!-- Action Header -->
+        <header class="action-header">
+            <h2>My Professional Resume</h2>
+            <!-- The 'download' attribute forces browsers to download the file instead of just opening it -->
+            <a href="assets/my-resume.pdf" download="John_Doe_Resume.pdf" class="download-btn">
+                <span>⬇️</span> Download PDF
+            </a>
+        </header>
+
+        <!-- Document Preview Window -->
+        <section class="resume-preview-window">
+            <article class="resume-paper">
+                
+                <!-- Resume Header -->
+                <header class="resume-header">
+                    <h1>John Doe</h1>
+                    <p class="subtitle">Full Stack Developer</p>
+                    <p class="contact">john.doe@email.com | +1 (555) 019-2834 | San Francisco, CA</p>
+                </header>
+
+                <hr>
+
+                <!-- Resume Body Content -->
+                <div class="resume-body">
+                    <section class="resume-section">
+                        <h3>Professional Summary</h3>
+                        <p>Driven software engineer with 4+ years of experience specializing in building scalable web applications using HTML, CSS, JavaScript, and Node.js.</p>
+                    </section>
+
+                    <section class="resume-section">
+                        <h3>Experience</h3>
+                        <div class="job-entry">
+                            <div class="job-title-row">
+                                <strong>Senior Web Developer</strong>
+                                <span>2024 – Present</span>
+                            </div>
+                            <p class="company">TechCorp Solutions</p>
+                            <ul>
+                                <li>Led a team of 4 developers to rebuild the legacy e-commerce platform.</li>
+                                <li>Optimized page load times by 40% using clean frontend architecture.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="resume-section">
+                        <h3>Skills</h3>
+                        <p>Frontend (HTML5, CSS3, JavaScript), Backend (Node.js, Express), Databases (MongoDB, PostgreSQL), Git, Agile Methodology.</p>
+                    </section>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
