@@ -22,7 +22,6 @@
             --blue-medium: #2e6287;
             --blue-active: #4087b0;
 
-            --brown: #884905;
             --red-dark: #760e00;
 
             --text: #172331;
@@ -419,24 +418,6 @@
                 600;
         }
 
-        .resume-header__summary {
-            max-width:
-                760px;
-
-            margin:
-                0;
-
-            color:
-                var(--text-secondary);
-
-            font-size:
-                16px;
-
-            line-height:
-                1.75;
-        }
-
-
         /* group - contact area */
         .contact-row {
             display:
@@ -526,7 +507,7 @@
                 var(--text-secondary);
 
             font-size:
-                16px;
+                17px;
 
             line-height:
                 1.8;
@@ -792,7 +773,7 @@
         .project-type {
             margin: 0 0 5px;
             color: var(--red-dark);
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             letter-spacing: 0.08em;
             line-height: 1.3;
@@ -1205,19 +1186,49 @@
                 Entry-Level Professional
             </p>
 
+        </header>
 
-            <p class="resume-header__summary">
-                IT and cybersecurity professional focused on
-                infrastructure security, systems administration,
-                security monitoring, and defensive security
-                operations. Experience includes 4+ years of security 
-                operations, networking, systems administration, logging,
-                monitoring, and incident response.
-            </p>
+
+
+        <!-- section1 - about -->
+        <section
+            id="about"
+            class="resume-section"
+            data-nav-section="0"
+        >
+
+            <div class="section-heading">
+
+                <h2>
+                    About
+                </h2>
+
+            </div>
+
+            <div class="section-rule"></div>
+
+
+            <div class="about-text">
+
+                <p>
+                    I’m a cybersecurity and IT professional focused on building, 
+                    securing, and troubleshooting the infrastructure many 
+                    organizations rely on. My experience spans security operations, 
+                    systems administration, networking, security monitoring, logging, and 
+                    incident response, with a strong emphasis on defensive security 
+                    and practical problem-solving. I’ve worked hands-on with Active 
+                    Directory, SIEM platforms, Windows environments, network 
+                    infrastructure, and custom lab environments, while also applying 
+                    these skills through blue team cybersecurity competitions. I enjoy 
+                    understanding how systems work from hardware to the software, finding 
+                    where problems occur, and turning those problems into solutions. 
+                </p>    
+
+            </div>
 
             <p>
             <a href="MartinQuintanaResume.pdf" download="MartinQuintanaResume.pdf" 
-            class="resume-header__summary" style="color:var(--blue-dark);">
+            class="about-text" style="color:var(--blue-dark);">
                 Download my official resume here!
             </a>
             </p>
@@ -1247,51 +1258,14 @@
                     LinkedIn
                 </a>
 
-            </div>
-
-        </header>
-
-
-
-        <!-- section1 - about -->
-        <section
-            id="about"
-            class="resume-section"
-            data-nav-section="0"
-        >
-
-            <div class="section-heading">
-
-                <h2>
-                    About
-                </h2>
-
-            </div>
-
-            <div class="section-rule"></div>
-
-
-            <div class="about-text">
-
-                <p>
-                    I am a cybersecurity and IT professional with
-                    a strong interest in defensive security, systems
-                    administration, infrastructure, and security
-                    operations.
-                </p>
-
-                <p>
-                    My technical experience includes blue team cybersecurity 
-                    competitions, Active Directory, security monitoring, SIEM 
-                    solutions, custom lab environments, PowerShell, and networking.
-                </p>
-
-                <p>
-                    I enjoy working with infrastructure at both the
-                    software and hardware layers. Identifying
-                    problems, troubleshooting environments, and 
-                    building practical security solutions.
-                </p>
+                <a
+                class="contact-item"
+                href="https://www.github.com/Martyqqq"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
 
             </div>
 
@@ -1649,7 +1623,7 @@
             <div class="section-rule"></div>
 
             <article class="project">
-                <p class="project-type">Security Monitoring</p>
+                <a class="project-type">Security Monitoring</a>
                 <h3>Security Monitoring Lab</h3>
                 <p>
                     Built a Windows-based security monitoring environment
@@ -1659,7 +1633,7 @@
             </article>
 
             <article class="project">
-                <p class="project-type">Systems Administration</p>
+                <a class="project-type">Systems Administration</a>
                 <h3>Sysadmin Lab</h3>
                 <p>
                     Designed and administered a multi-server
@@ -1669,7 +1643,7 @@
             </article>
 
             <article class="project">
-                <p class="project-type">Security Hardening</p>
+                <a class="project-type">Security Hardening</a>
                 <h3>Windows Security Operations Lab</h3>
                 <p>
                     Practiced Windows security hardening, log analysis, 
