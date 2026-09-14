@@ -22,8 +22,6 @@
             --blue-medium: #2e6287;
             --blue-active: #4087b0;
 
-            --alt-blue: #315380;
-
             --text: #172331;
             --text-secondary: #596a78;
 
@@ -773,7 +771,7 @@
 
         .project-type {
             margin: 0 0 5px;
-            color: var(--alt-blue);
+            color: var(--blue-dark);
             font-size: 12px;
             font-weight: 700;
             letter-spacing: 0.08em;
@@ -796,6 +794,45 @@
             line-height: 1.7;
         }
 
+        /* group - accolades section */
+        .accolades {
+            padding: 23px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .accolades:first-child {
+            padding-top: 0;
+        }
+
+        .accolades:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .accolades-organization {
+            margin: 0 0 5px;
+            color: var(--blue-dark);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+
+        .accolades h3 {
+            margin: 0 0 7px;
+            color: var(--text);
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .accolades p {
+            max-width: 760px;
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.7;
+        }
 
         /* group - footer */
         .resume-footer {
@@ -819,16 +856,19 @@
             .section-nav {
                 left: 16px;
                 width: 196px;
-                padding: 18px 15px;
+                padding: 18px 18px;
             }
 
             .section-nav__circle {
                 width: 42px;
                 height: 42px;
-                flex-basis: 42px;
+                flex: 0 0 42px;
             }
 
             .section-nav__connector {
+                height: 12px;
+                margin-top: 4px;
+                margin-bottom: 4px;
                 margin-left: 19.5px;
             }
 
@@ -1217,6 +1257,35 @@
 
                 </a>
 
+                <div
+                    class="section-nav__connector"
+                    data-connector-index="4"
+                    aria-hidden="true"
+                ></div>
+
+            </li>
+
+            <!-- navigation item 6 - accolades -->
+            <li
+                class="section-nav__item is-unread"
+                data-nav-index="5"
+            >
+
+                <a
+                    href="#accolades"
+                    class="section-nav__link"
+                >
+
+                    <span class="section-nav__circle" aria-hidden="true"></span>
+
+                    <span class="section-nav__content">
+                        <span class="section-nav__title">
+                            Accolades
+                        </span>
+                    </span>
+
+                </a>
+
             </li>
 
         </ul>
@@ -1362,7 +1431,7 @@
                         </h3>
 
                         <p class="experience-company">
-                            Amazon Web Services
+                            Amazon Web Services | New Carlisle, Indiana
                         </p>
 
                     </div>
@@ -1377,25 +1446,31 @@
                 <ul>
 
                     <li>
-                        Supported enterprise machine learning 
-                        infrastructure, servers, networking 
-                        equipment, and data center operations.
+                        Maintained uptime of servers and network infrastructure 
+                        through proactive monitoring,troubleshooting, and 
+                        SLA-based capacity restoration.
                     </li>
 
                     <li>
-                        Troubleshot hardware, operating system,
-                        network, and connectivity issues.
+                        Served as an escalation point for complex incidents; 
+                        led thermal critical investigations, performed root-cause
+                         analysis, and resolved 500+ infrastructure tickets.
                     </li>
 
                     <li>
-                        Resolved 500+ infrastructure tickets including
-                        data center fiber, host troubleshooting, and 
-                        data sanitization procedures.
+                        Enforced security compliance through asset tracking, 
+                        data sanitization, and physical audits.
                     </li>
 
                     <li>
-                        Trained 30+ new technicians while serving as a
-                        trainer point of contact.
+                        Trained and onboarded 30+ new staff members, enhancing 
+                        team skill levels and boosting support efficiency.
+                    </li>
+
+                    <li>
+                        Collaborated closely with engineering teams to resolve 
+                        critical errors, reducing outage time across multiple 
+                        customer instances.
                     </li>
 
                 </ul>
@@ -1414,7 +1489,7 @@
                         </h3>
 
                         <p class="experience-company">
-                            Indiana Tech
+                            Indiana Tech | Fort Wayne, Indiana
                         </p>
 
                     </div>
@@ -1429,23 +1504,27 @@
                 <ul>
 
                     <li>
-                        Administered Windows-based systems and
-                        Active Directory environments.
+                        Administered Active Directory user accounts, 
+                        including password resets, account analysis,
+                        and access management, to support secure access 
+                        management.
                     </li>
 
                     <li>
-                        Investigated system and authentication
-                        issues using logs and administrative tools.
+                        Resolved technical issues by managing and resolving 
+                        200+ support tickets, phone calls, and emails, 
+                        ensuring prompt solutions.
                     </li>
 
                     <li>
-                        Managed and resolved 200+ support tickets 
-                        alongside phone call requests.
+                        Provided guidance to end-users, helping them troubleshoot,
+                         while promoting best practices for IT-related tasks.
                     </li>
 
                     <li>
-                        Regularly collaborated with management and 
-                        team members to improve service desk capabilities.
+                        Collaborated with management and team members to improve 
+                        service desk processes, enhance strategies, and maintain 
+                        high customer satisfaction levels.
                     </li>
 
                 </ul>
@@ -1464,7 +1543,7 @@
                         </h3>
 
                         <p class="experience-company">
-                            Indiana Tech Cyber Warriors
+                            Indiana Tech Cyber Warriors | Fort Wayne, Indiana
                         </p>
 
                     </div>
@@ -1479,27 +1558,49 @@
                 <ul>
 
                     <li>
-                        Analyzed compromised hosts and managed threats to ensure 
+                        Performed system analysis on compromised hosts to ensure 
                         security compliance.
                     </li>
 
                     <li>
-                        Administered Windows environments using Active Directory, 
-                        PowerShell, and Group Policy.
+                        Implemented standard operating procedures for systems, 
+                        resulting in decreased security breaches.
                     </li>
 
                     <li>
-                        Worked with SIEM and endpoint logging solutions
-                        to improve security visibility.
+                        System administrator tasks such as Group Policy, deploying
+                         PowerShell scripts, and administrating Active Directory 
+                         environments.
                     </li>
 
                     <li>
-                        Documented 25+ guides for team knowledge.
+                        Leveraged SIEM platforms for proactive system monitoring and
+                         log collection.
                     </li>
 
                     <li>
-                        Competed in NCCDC, DOE CyberForce, Ubuff Lockdown, and NCL.
-                         Placed 6th at NCCDC in 2025!
+                        Developed reports for executive audiences to ensure fluid 
+                        communications
+                    </li>
+
+                    <li>
+                        Attended and lead multiple team practices, totaling 20 hours
+                         per week.
+                    </li>
+
+                    <li>
+                        Curated 25+ technical guides on security, configuration, and
+                         general knowledge wiki pages.
+                    </li>
+
+                    <li>
+                        Collaborated with various specialty teams to tackle complicated
+                         issues.
+                    </li>
+
+                    <li>
+                        Competed in various competitions, notably earning 6th place in
+                         NCCDC.
                     </li>
 
                 </ul>
@@ -1641,7 +1742,7 @@
                 </h3>
 
                 <p class="education-school">
-                    Indiana Tech
+                    Indiana Tech | Fort Wayne, Indiana
                 </p>
 
                 <p class="education-details">
@@ -1649,12 +1750,8 @@
                 </p>
 
                 <p class="education-details"> 
-                    GPA: 3.687
-                </p>
-
-                <p class="education-details"> 
-                    Dean's list for 6 of 7 semesters
-                </p>       
+                    GPA: 3.7
+                </p>  
                 
                 <p class="education-details"> 
                     Relevant coursework: Server Systems, Web Security, 
@@ -1663,6 +1760,22 @@
                     Computer Hardware & Software, Digital Forensics, 
                     Disaster Recovery, Programming, and Network Security.
                 </p>  
+
+            </article>
+
+            <article class="education-item">
+
+                <h3 class="education-degree">
+                    Academic Honors High School Diploma
+                </h3>
+
+                <p class="education-school">
+                    Bishop Dwenger | Fort Wayne, Indiana
+                </p>
+
+                <p class="education-details">
+                    Graduated May 2022
+                </p>
 
             </article>
 
@@ -1712,8 +1825,96 @@
                 </p>
             </article>
 
+            <article class="project">
+                <a class="project-type">AI-Powered Log Summarizer</a>
+                <h3>Insight Analyst</h3>
+                <p>
+                    Developed a web app that interacts with a locally
+                    running LLM to triage and summarize user-provided
+                     event logs.
+                </p>
+            </article>
+
         </section>
 
+        <!-- section6 - accolades -->
+        <section
+            id="accolades"
+            class="resume-section"
+            data-nav-section="5"
+        >
+
+            <div class="section-heading">
+                <h2>Accolades</h2>
+            </div>
+
+            <div class="section-rule"></div>
+
+            <article class="accolades">
+                <a class="accolades-organization">Indiana Tech Cyber Warriors</a>
+                <h3>NCCDC Sixth Place Finish</h3>
+                <p>
+                    The Indiana Tech Cyber Warriors placed sixth out of ten teams 
+                    at the National Collegiate Cyber Defense Competition, in the 
+                    spring of 2025.
+                </p>
+            </article>
+
+            <article class="accolades">
+                <a class="accolades-organization">Indiana Tech Cyber Warriors</a>
+                <h3>All CCDC Placements</h3>
+                <p>
+                    MWCCDC Qualifier | first place in 2024 and 2025
+                </p>
+                <p>
+                    MWCCDC | first place in 2024 and 2025
+                </p>
+                <p>
+                    NCCDC | tenth place in 2024
+                </p>
+                <p>
+                    NCCDC | sixth place in 2025
+                </p>
+
+            </article>
+
+            <article class="accolades">
+                <a class="accolades-organization">Indiana Tech</a>
+                <h3>Tech Applause</h3>
+                <p>
+                    Student recognition award for excellence.
+                </p>
+                <p>
+                    Awarded for finishing a university-best sixth place at NCCDC.
+                </p>
+            </article>
+
+            <article class="accolades">
+                <a class="accolades-organization">Indiana Tech</a>
+                <h3>Dean's List Appearances</h3>
+                <p>
+                    Dean's list for six semesters:
+                </p>
+                <p>
+                    Fall 2022, Spring 2023, Fall 2023, Spring 2024, Spring 2025, Fall 2025
+                </p>
+            </article>
+
+            <article class="accolades">
+                <a class="accolades-organization">AWS</a>
+                <h3>Most High Severity Tickets in 2025</h3>
+                <p>
+                    Data Center Operations teams will work off tickets.
+                    Tickets can come in multiple severities. 
+                </p>
+                <p>
+                    I resolved over 80 high severity tickets at my cluster,
+                    which is the most out of all technicians.
+                </p>
+            </article>
+
+        </section>    
+        
 
         <!-- area - footer -->
 
