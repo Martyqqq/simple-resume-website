@@ -6,7 +6,13 @@ This serves not only as a personal project to develop my web design skills, but 
 You can visit my website at **[martinqj.com](https://www.martinqj.com)**, containing everything you need to know.
 
 ## Features
-- **Responsive Design:** Fully optimized for desktop viewing.
-- **Experience and Projects:** Highlights of my recent work and skills.
-- **Contact Options:** A direct way for recruiters and site visitors to get in touch.
+- **Responsive Design:** Fully optimized for desktop and mobile viewing.
+    - *Mobile and desktop utilize the navbar differently for easier readability and appropriate screen coverage.*
+- **About:** A small introduction of myself including skills and experience.
 - **Resume Download:** A copy of my official resume for downloading.
+- **Contact:** A direct way for recruiters and site visitors to get in touch.
+- **Experience:** Contains all of my recent work, matching my resume.
+- **Skills:** Tables containing my skills broken down into separate groups.
+- **Education:** My degrees, graduations, and coursework.
+- **Projects:** A list of different skill-building labs and assignments that I have produced.
+- **Accolades:** A series of achievements throughout my professional and educational periods.
